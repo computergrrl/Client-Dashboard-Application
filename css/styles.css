@@ -35,6 +35,9 @@ ul {
 #header {
   grid-area: header;
   background-color: rgb(96, 94, 180);
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #main {
@@ -42,7 +45,24 @@ ul {
   background-color: #fff;
 }
 
-/************** NAVIGATION *****************/
+/*********************
+       HEADER 
+**********************/
+
+#bell-div img {
+  width: 35px;
+  height: 40px;
+}
+
+.profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/************************
+    NAVIGATION BAR
+************************/
 
 .dashboard {
   display: block;
