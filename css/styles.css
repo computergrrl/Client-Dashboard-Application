@@ -6,7 +6,10 @@ ul {
   padding-left: 0;
 }
 
-
+body {
+  font-family: "Martel", sans-serif;
+  font-weight: 200;
+}
 /******************* 
     GRID SETUP
 ********************/
