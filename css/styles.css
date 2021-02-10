@@ -52,17 +52,31 @@ body {
        HEADER 
 **********************/
 
+.yourApp {
+  flex-basis: 103px;
+  color: #fff;
+}
+
 #bell-div img {
-  width: 35px;
-  height: 40px;
+  margin-top: 10px;
+  width: 28px;
+  height: 38px;
 }
 
 .profile-img {
-  width: 45px;
-  height: 45px;
+  margin-top: 10px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
 }
 
+.clientName {
+  font-weight: 500;
+  font-size: 14px;
+  width: 85px;
+  color: #fff;
+  margin-top: 18px;
+}
 /************************
     NAVIGATION BAR
 ************************/
