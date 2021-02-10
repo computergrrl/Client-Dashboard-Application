@@ -9,13 +9,14 @@ ul {
 body {
   font-family: "Martel", sans-serif;
   font-weight: 200;
+  margin: 0 auto;
 }
 /******************* 
     GRID SETUP
 ********************/
 
 #container {
-  max-width: 95%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(60px, auto);
