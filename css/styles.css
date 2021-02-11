@@ -54,6 +54,21 @@ body {
        HEADER 
 **********************/
 
+.header-left {
+  display: flex;
+  justify-content: left;
+  margin-left: 8px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+
 .yourApp {
   flex-basis: 103px;
   color: #fff;
@@ -62,12 +77,14 @@ body {
 #bell-div {
   margin: 20px 5px 15px 25px;
   border-right: .5px #fff solid;
+  position: relative;
 }
 
 #bell-div img {
   /* margin-top: 10px; */
   width: 28px;
   height: 38px;
+  padding-right: 5px;
 }
 
 .profile-img {
@@ -82,7 +99,8 @@ body {
   font-size: 14px;
   width: 85px;
   color: #fff;
-  margin-top: 18px;
+  padding-left: 5px;
+  
 }
 /************************
     NAVIGATION BAR
