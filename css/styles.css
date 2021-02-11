@@ -80,6 +80,16 @@ body {
   position: relative;
 }
 
+.notification {
+  position: absolute;
+  right: 7px;
+  top: 0px;
+  background-color: lime;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+
 #bell-div img {
   /* margin-top: 10px; */
   width: 28px;
