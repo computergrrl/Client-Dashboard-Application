@@ -45,7 +45,7 @@ body {
   align-items: center;
 }
 
-#main {
+main {
   grid-area: main;
   background-color: #fff;
 }
@@ -87,7 +87,8 @@ body {
   background-color: lime;
   width: 5px;
   height: 5px;
-  display: inline-block;
+  border-radius: 50%;
+  /* display: inline-block; */
 }
 
 #bell-div img {
@@ -142,4 +143,36 @@ body {
   background-image: url("../icons/icon-settings.svg");
   width: 40px;
   height: 40px;
+}
+
+/************************
+         MAIN 
+************************/
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.gray-bar {
+  background-color: rgb(245, 245, 245);
+  flex-grow: 2;
+}
+
+.main-title {
+  width: 30%;
+  margin: 0 5px;
+}
+
+.traffic-header h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 600;
 }
