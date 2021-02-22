@@ -7,7 +7,7 @@ ul {
 }
 
 body {
-  font-family: "Martel", sans-serif;
+  font-family: "Martel serif", sans-serif;
   font-weight: 200;
   margin: 0 auto;
 }
@@ -32,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-around;
   grid-area: nav-bar;
-  background-color: rgb(60, 58, 95);
+  background-color: rgba(60, 58, 95, 0.9);
   color: #fff;
 }
 
@@ -106,8 +106,9 @@ main {
 }
 
 .clientName {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
   width: 85px;
   color: #fff;
   padding-left: 5px;
@@ -184,6 +185,7 @@ section h4 {
 .active {
   background-color: rgba(112, 192, 125, 0.8);
   border-radius: 45%;
+  color: #fff;
 }
 .chart {
   display: flex;
@@ -191,3 +193,42 @@ section h4 {
   max-width: 90%;
   margin: 5px auto;
 }
+
+/************************
+    SOCIAL MEDIA  
+************************/
+
+.social-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.social-container h4 {
+  align-self: flex-start; 
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  background-color: rgba(242, 242, 242, 1);
+  height: 100px;
+  border: dimgray solid 2px;
+  border-radius: .5em;
+  margin: 10px auto;
+}
+
+.social-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 25%;
+}
+
+.social-text {
+  flex-grow: 2; 
+  font-size: 18px;
+}
+
