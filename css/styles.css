@@ -146,8 +146,8 @@ main {
   height: 40px;
 }
 
-/************************
-         MAIN 
+/***********************
+         CHARTS
 ************************/
 
 #top-bar {
@@ -180,6 +180,12 @@ section h4 {
 .traffic-nav-link {
   font-weight: 500;
   padding: 7px;
+}
+
+.traffic-nav-link:hover {
+  background-color: rgba(112, 192, 125, 0.4);
+  border-radius: 45%;
+  color: #fff;
 }
 
 .active {
