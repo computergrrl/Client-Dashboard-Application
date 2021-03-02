@@ -244,19 +244,20 @@
         <div id="messaging">
           <input type="text" class="messaging-name" placeholder="Search for user">
           <textarea class="messaging-text" placeholder="Message for user"></textarea>
-          <button type="submit" class="messaging-button" >Send Message</button>
+          <button type="submit" class="messaging-button">Send Message</button>
         </div>
       </section>
       <hr>
 
       <section class="clearfix settings-box">
-        <h3>Settings</h3>
+        <h4>Settings</h4>
+        <div id="settings">
         <label class="switch-light switch-material" onclick="">
           <input type="checkbox">
-         <strong>
-           Send Email Notifications
+          <strong>
+            Send Email Notifications
           </strong>
-          <span>
+          <span class="toggle">
             <span>Off</span>
             <span>On</span>
             <a></a>
@@ -265,27 +266,28 @@
 
         <label class="switch-light switch-material" onclick="">
           <input type="checkbox">
-         <strong>
-           Set Profile to Public
+          <strong>
+            Set Profile to Public
           </strong>
-          <span>
+          <span class="toggle">
             <span>Off</span>
             <span>On</span>
             <a></a>
           </span>
         </label>
         <select class="timezone" id="timezone">
-        <option disabled selected>Select a Timezone</option>
-        <option>Eastern</option>
-        <option>Central/Standard</option>
-        <option>Mountain</option>
-        <option>Pacific</option>
+          <option disabled selected>Select a Timezone</option>
+          <option>Eastern</option>
+          <option>Central/Standard</option>
+          <option>Mountain</option>
+          <option>Pacific</option>
         </select>
-        <div class="settings-buttons" >
-        <button class="save-button" id="save">Save</button>
-        <button class="cancel-button" id="cancel">Cancel</button>
+      </div>
+        <div class="settings-buttons">
+          <button class="save-button" id="save">Save</button>
+          <button class="cancel-button" id="cancel">Cancel</button>
         </div>
-        </section>
+      </section>
 
     </main>
   </div>

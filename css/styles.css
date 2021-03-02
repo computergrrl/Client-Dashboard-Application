@@ -354,6 +354,33 @@ section h4 {
        MESSAGING  
 ************************/
 
+#settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+
+input[type="checkbox"], select {
+  margin: 20px 0;
+}
+
+.cancel-button {
+  background-color: rgb(175, 175, 175);
+}
+
+.save-button {
+  background-color: rgba(14, 94, 87, .8);
+}
+
 .settings-buttons {
   display: flex;
   flex-direction: row;
@@ -363,8 +390,10 @@ section h4 {
 
 .save-button, .cancel-button {
   width: 45%;
-  margin: 0 15px;
+  min-height: 45px;
+  margin: 0 10px;
   border: 1px solid rgb(193, 193, 193);
+  border-radius: .5em;
   text-transform: uppercase;
   color: #fff;
 }
