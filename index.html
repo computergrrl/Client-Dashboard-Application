@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/toggle-switch.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -49,7 +50,7 @@
     </nav>
     <!-- ********* MAIN SECTION OF PAGE ************** -->
 
-    <main>
+    <main class="clearfix">
       <div id="top-bar">
         <div class="main-title">
           <h3>
@@ -246,7 +247,45 @@
           <button type="submit" class="messaging-button" >Send Message</button>
         </div>
       </section>
+      <hr>
 
+      <section class="clearfix settings-box">
+        <h3>Settings</h3>
+        <label class="switch-light switch-material" onclick="">
+          <input type="checkbox">
+         <strong>
+           Send Email Notifications
+          </strong>
+          <span>
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span>
+        </label>
+
+        <label class="switch-light switch-material" onclick="">
+          <input type="checkbox">
+         <strong>
+           Set Profile to Public
+          </strong>
+          <span>
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span>
+        </label>
+        <select class="timezone" id="timezone">
+        <option disabled selected>Select a Timezone</option>
+        <option>Eastern</option>
+        <option>Central/Standard</option>
+        <option>Mountain</option>
+        <option>Pacific</option>
+        </select>
+        <div class="settings-buttons" >
+        <button class="save-button" id="save">Save</button>
+        <button class="cancel-button" id="cancel">Cancel</button>
+        </div>
+        </section>
 
     </main>
   </div>

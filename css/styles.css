@@ -9,6 +9,9 @@ ul {
 section {
   max-width: 100%;
 }
+.clearfix {
+  overflow: auto;
+}
 
 body {
   font-family: "Martel serif", sans-serif;
@@ -345,4 +348,27 @@ section h4 {
   margin: 15px auto;
   min-height: 45px;
 
+}
+
+/************************
+       MESSAGING  
+************************/
+
+.settings-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.save-button, .cancel-button {
+  width: 45%;
+  margin: 0 15px;
+  border: 1px solid rgb(193, 193, 193);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.settings-box {
+  margin-bottom: 2em;
 }
