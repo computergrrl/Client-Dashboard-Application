@@ -1,0 +1,47 @@
+/************************
+       MEMBERS  
+************************/
+
+.divider {
+  line-height: .8em;
+  color: blue;
+}
+
+.members-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  border-bottom: solid black .5px;
+  padding-bottom: 5px;
+
+}
+
+.members-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.members-text a {
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.members-container p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: .8em;
+  text-align: center;
+}
+
+.members-container img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.members-container span {
+  font-weight: 500;
+  display: block;
+}

@@ -1,0 +1,53 @@
+/*****************************
+    MAIN DASHBOARD & CHARTS
+******************************/
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.gray-bar {
+  background-color: rgb(225, 225, 225);
+  flex-grow: 2;
+}
+
+.main-title {
+  width: 30%;
+  margin: 0 5px;
+}
+
+section h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.traffic-nav-link {
+  font-weight: 500;
+  padding: 7px;
+}
+
+.traffic-nav-link:hover {
+  background-color: rgba(112, 192, 125, 0.4);
+  border-radius: 45%;
+  color: #fff;
+}
+
+.active {
+  background-color: rgba(112, 192, 125, 0.8);
+  border-radius: 45%;
+  color: #fff;
+}
+.chart {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 5px auto;
+}
