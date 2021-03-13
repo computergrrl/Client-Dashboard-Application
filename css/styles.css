@@ -952,12 +952,12 @@ ul {
 
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: #3f51b5;
+    background: #0e5e57;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
   }
 
   .switch-material.switch-light input:checked ~ span {
-    background: rgba(63, 81, 181, 0.5);
+    background: rgba(14, 94, 87, 0.5);
   }
 
   /* switch-toggle
@@ -977,7 +977,7 @@ ul {
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: #3f51b5;
+    background: #0e5e57;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform 0.4s ease-in;
@@ -1002,7 +1002,7 @@ ul {
   }
 
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: #3f51b5;
+    border-color: #0e5e57;
   }
 
   /* ripple
@@ -1019,7 +1019,7 @@ ul {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: #3f51b5;
+    background: #0e5e57;
     opacity: 0.4;
     margin-left: -1.25em;
     margin-top: -1.25em;
@@ -1454,11 +1454,26 @@ section h4 {
 }
 
 .toggle-button-2 strong {
-  margin-right: 39px;
+  margin-right: 44px;
 }
 
 input[type=checkbox], select {
   margin: 20px 0;
+}
+
+#timezone-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timezone {
+  background-color: rgba(242, 242, 242, 0.7);
+  width: 200px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 0.3em;
 }
 
 .cancel-button {

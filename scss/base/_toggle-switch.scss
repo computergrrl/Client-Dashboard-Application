@@ -385,10 +385,10 @@
     clip: rect(0 0 0 0); }
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: #3f51b5;
+    background: $color-theme;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12); }
   .switch-material.switch-light input:checked ~ span {
-    background: rgba(63, 81, 181, 0.5); }
+    background: $color-theme-faded }
   /* switch-toggle
  */
   .switch-toggle.switch-material {
@@ -402,7 +402,7 @@
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: #3f51b5;
+    background: $color-theme;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform .4s ease-in; }
@@ -421,7 +421,7 @@
     border: 0.125em solid rgba(0, 0, 0, 0.54);
     transform: translateY(-50%); }
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: #3f51b5; }
+    border-color: $color-theme; }
   /* ripple
  */
   .switch-light.switch-material > span:before,
@@ -436,7 +436,7 @@
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: #3f51b5;
+    background: $color-theme;
     opacity: .4;
     margin-left: -1.25em;
     margin-top: -1.25em;
