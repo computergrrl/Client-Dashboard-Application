@@ -20,6 +20,10 @@
 
 }
 
+.toggle-button-2 strong {
+  margin-right: 39px;
+}
+
 input[type="checkbox"], select {
   margin: 20px 0;
 }
@@ -29,7 +33,7 @@ input[type="checkbox"], select {
 }
 
 .save-button {
-  background-color: rgba(14, 94, 87, .8);
+  background-color: $color-theme-button;
 }
 
 .settings-buttons {

@@ -1453,6 +1453,10 @@ section h4 {
   margin: 15px 10px;
 }
 
+.toggle-button-2 strong {
+  margin-right: 39px;
+}
+
 input[type=checkbox], select {
   margin: 20px 0;
 }
