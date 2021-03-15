@@ -10,8 +10,8 @@
 
 .messaging-name {
   width: 80%;
-  background-color: rgba(242, 242, 242, .7);
-  border: 1px solid rgb(193, 193, 193);
+  background-color: $box-background;
+  border: $box-border;
   height: 40px;
   margin: 15px auto;
   border-radius: .5em;
@@ -22,8 +22,8 @@
   width: 80%;
   padding: 10px;
   min-height: 135px;
-  background-color: rgba(242, 242, 242, .7);
-  border: 1px solid rgb(193, 193, 193);
+  background-color: $box-background;
+  border: $box-border;
   margin: 15px auto;
   border-radius: .5em;
 }
@@ -31,7 +31,7 @@
 .messaging-button {
   width: 80%;
   color: #fff;
-  background-color: rgba(14, 94, 87, .8);
+  background-color: $color-theme-button;
   border-radius: .5em;
   margin: 15px auto;
   min-height: 45px;
