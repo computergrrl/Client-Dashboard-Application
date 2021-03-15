@@ -12,6 +12,24 @@
   flex-grow: 2;
 }
 
+#alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+  padding: 5px 10px;
+  background-color: $color-theme;
+  color: #fff;
+  max-height: 45px;
+  border-radius: .3em;
+
+}
+
+#alert strong {
+  font-weight: 500;
+}
+
 .main-title {
   width: 30%;
   margin: 0 5px;
