@@ -48,11 +48,9 @@ let monthlyData = {
 };
 
 let dailyData = {
-  labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun",
-  ],
+  labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun", ],
   datasets: [{
-    data: [85, 265, 153, 223 , 307, 355, 285,
-    ],
+    data: [85, 265, 153, 223, 307, 355, 285, ],
     backgroundColor: 'rgba(116, 119, 191, .3)',
     borderWidth: 1,
   }]
@@ -95,7 +93,7 @@ let barChart = new Chart(barCanvas, {
     labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", ],
     datasets: [{
       label: 'Unique Visits Per Day',
-      data: [85, 265, 153, 223 , 307, 355, 285, ],
+      data: [85, 265, 153, 223, 307, 355, 285, ],
       backgroundColor: 'rgba(116, 119, 191, .3)',
     }]
   },
@@ -139,14 +137,24 @@ let ul = document.querySelectorAll(".traffic-nav li");
 
 
 function chooseGraph(value) {
-  if (value === "Hourly") {
-    trafficData = hourlyData;
-  } else if (value === "Daily") {
-    trafficData = dailyData;
-  } else if (value === "Weekly") {
-    trafficData = weeklyData;
-  } else {trafficData = monthlyData;}
   
+  switch (value) {
+    case "Hourly":
+      trafficData = hourlyData;
+      break;
+    case "Daily":
+      trafficData = dailyData;
+      break;
+    case "Weekly":
+      trafficData = weeklyData;
+      break;
+    case "Monthly":
+      trafficData = monthlyData;
+      break;
+    default:
+      trafficData = weeklyData;
+  }
+
   new Chart(trafficCanvas, {
     type: 'line',
     data: trafficData,
@@ -161,4 +169,3 @@ for (let li of ul) {
 
   });
 }
-
