@@ -2,7 +2,6 @@ const trafficLinks = document.querySelectorAll(".traffic-nav-link");
 const alert = document.getElementById("alert");
 
 
-
 //first loop to add event listener to all the chart nav links
 for (let link of trafficLinks) {
   link.addEventListener("click", (e) => {
@@ -21,4 +20,12 @@ for (let link of trafficLinks) {
 
 //create alert message 
 alert.innerHTML = `<p><strong>You have unread messages</strong></p>
-                  <p class="close">X</p>`;
+<p class="close">X</p>`;
+
+const closeButton = document.querySelector(".close");
+
+closeButton.addEventListener("click" , (e)=>{
+
+  alert.style.display = "none";
+  //console.log(e.target);
+} );

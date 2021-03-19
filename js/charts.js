@@ -78,19 +78,19 @@ const mobileData = {
   };
 
   //following code sets labels to the side of pie chart
-  // const mobileOptions = {
-  //   legend: {
-  //   position: 'right',
-  //   labels: {
-  //   boxWidth: 20,
-  //   fontStyle: 'bold'
-  //   }
-  //   }
-  //   }
+  const mobileOptions = {
+    legend: {
+    position: 'left',
+    labels: {
+    boxWidth: 65,
+    fontStyle: 'bold'
+    }
+    }
+    }
 
 
-  let pieChart = new Chart(pieCanvas, {
-    type: "pie",
+  let donutChart = new Chart(pieCanvas, {
+    type: "doughnut",
     data: mobileData,
-    //options: mobileOptions,
+    options: mobileOptions,
   });
