@@ -34,11 +34,16 @@ const bellDiv = document.querySelector("#bell-div");
 const modal = document.querySelector("#modal");
 
 bellDiv.addEventListener("click", (e) => {
-  // modal.innerHTML = `<p id="closer">Close Window</p>`;
-  modal.classList = "show";
+  modal.innerHTML = `<p>Close  X</p>`;
+  if(e.target !== modal) {
+    modal.classList.toggle("hide");
+  }
+  e.stopPropagation();
 });
 
-modal.addEventListener("click", (e) => {
-    console.log(e.target);
-    modal.classList = "hide";
+
+document.addEventListener("click", (e) => {
+  if (e.target.textContent == "Close  X") {
+    modal.classList.add("hide");
+  }
 });
