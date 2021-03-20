@@ -24,8 +24,21 @@ alert.innerHTML = `<p><strong>You have unread messages</strong></p>
 
 const closeButton = document.querySelector(".close");
 
+//Close alert box
 closeButton.addEventListener("click" , (e)=>{
 
   alert.style.display = "none";
-  //console.log(e.target);
 } );
+
+const bellDiv = document.querySelector("#bell-div");
+const modal = document.querySelector("#modal");
+
+bellDiv.addEventListener("click", (e) => {
+  // modal.innerHTML = `<p id="closer">Close Window</p>`;
+  modal.classList = "show";
+});
+
+modal.addEventListener("click", (e) => {
+    console.log(e.target);
+    modal.classList = "hide";
+});

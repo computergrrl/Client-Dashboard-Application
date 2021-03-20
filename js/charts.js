@@ -132,9 +132,9 @@ let donutChart = new Chart(pieCanvas, {
   options: mobileOptions,
 });
 
-
 let ul = document.querySelectorAll(".traffic-nav li");
 
+/*This function changes the value of trafficData based on clicked value and then renders a new chart */
 
 function chooseGraph(value) {
   
