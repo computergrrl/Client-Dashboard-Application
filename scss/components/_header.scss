@@ -112,9 +112,9 @@ header {
 #modal{
   width: 150px;
   height: 105px;
-  background-color: lightgrey;
+  background-color: $color-theme-button;
   z-index: 5;
-  border: 3px solid #000;
+  border: $box-border;
   position: absolute;
   top: 40px;
   left: -70px;

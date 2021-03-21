@@ -1232,9 +1232,9 @@ header {
 #modal {
   width: 150px;
   height: 105px;
-  background-color: lightgrey;
+  background-color: rgba(14, 94, 87, 0.8);
   z-index: 5;
-  border: 3px solid #000;
+  border: 1px solid #c1c1c1;
   position: absolute;
   top: 40px;
   left: -70px;
@@ -1597,6 +1597,42 @@ input[type=checkbox], select {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .dashboard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .visits {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .members {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .settings {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #graph-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #graph-wrapper section {
+    width: 50%;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+  }
+
+  .widget-container-pie {
+    padding-top: 30px;
+    padding-left: 15px;
   }
 }
 
