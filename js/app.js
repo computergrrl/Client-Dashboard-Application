@@ -34,7 +34,7 @@ const bellDiv = document.querySelector("#bell-div");
 const modal = document.querySelector("#modal");
 
 bellDiv.addEventListener("click", (e) => {
-  modal.innerHTML = `<p>Close  X</p>`;
+  modal.innerHTML = `<p class="closeButton">X</p>`;
   if(e.target !== modal) {
     modal.classList.toggle("hide");
   }
@@ -43,7 +43,7 @@ bellDiv.addEventListener("click", (e) => {
 
 
 document.addEventListener("click", (e) => {
-  if (e.target.textContent == "Close  X") {
+  if (e.target.textContent == "X") {
     modal.classList.add("hide");
   }
 });
