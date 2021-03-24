@@ -34,7 +34,9 @@ const bellDiv = document.querySelector("#bell-div");
 const modal = document.querySelector("#modal");
 
 bellDiv.addEventListener("click", (e) => {
-  modal.innerHTML = `<p class="closeButton">X</p>`;
+  modal.innerHTML = `<p class="closeButton">X</p>
+    <p class="modalMessages">Ron Weasley left you a message</p>
+    <p class="modalMessages">New comment on your article</p>`;
   if(e.target !== modal) {
     modal.classList.toggle("hide");
   }

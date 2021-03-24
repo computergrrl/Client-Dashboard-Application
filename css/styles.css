@@ -952,7 +952,7 @@ ul {
 
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: #0e5e57;
+    background: #5e0e15;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
   }
 
@@ -977,7 +977,7 @@ ul {
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: #0e5e57;
+    background: #5e0e15;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform 0.4s ease-in;
@@ -1002,7 +1002,7 @@ ul {
   }
 
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: #0e5e57;
+    border-color: #5e0e15;
   }
 
   /* ripple
@@ -1019,7 +1019,7 @@ ul {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: #0e5e57;
+    background: #5e0e15;
     opacity: 0.4;
     margin-left: -1.25em;
     margin-top: -1.25em;
@@ -1135,7 +1135,7 @@ main {
 **********************/
 #header {
   grid-area: header;
-  background-color: #0e5e57;
+  background-color: #5e0e15;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1231,8 +1231,8 @@ header {
 
 #modal {
   width: 150px;
-  height: 105px;
-  background-color: rgba(14, 94, 87, 0.8);
+  height: auto;
+  background-color: #0e5e57;
   z-index: 5;
   border: 1px solid #c1c1c1;
   position: absolute;
@@ -1245,7 +1245,20 @@ header {
   text-align: right;
   margin-top: 0;
   margin-right: 0;
-  padding: 5px;
+  padding: 5px 5px 0;
+  color: #fff;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.modalMessages {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  border-top: 1px solid #fff;
+  padding-top: 5px;
+  margin-top: 0;
 }
 
 .hide {
@@ -1314,7 +1327,7 @@ header {
   align-items: center;
   margin: 25px;
   padding: 5px 10px;
-  background-color: #0e5e57;
+  background-color: #5e0e15;
   color: #fff;
   max-height: 45px;
   border-radius: 0.3em;
@@ -1417,15 +1430,15 @@ section h4 {
 }
 
 .ig-svg {
-  fill: #0e5e57;
+  fill: #5e0e15;
 }
 
 .fb-svg {
-  fill: #0e5e57;
+  fill: #5e0e15;
 }
 
 .twitter-svg {
-  fill: #0e5e57;
+  fill: #5e0e15;
 }
 
 /************************
@@ -1633,6 +1646,7 @@ input[type=checkbox], select {
   .widget-container-pie {
     padding-top: 30px;
     padding-left: 15px;
+    padding-bottom: 30px;
   }
 }
 
