@@ -73,7 +73,9 @@
   /* inherit from label
  */
   .switch-light strong {
-    font-weight: inherit; }
+    font-weight: inherit;
+    margin-top: 8px;
+  }
   .switch-light > span {
     position: relative;
     overflow: hidden;

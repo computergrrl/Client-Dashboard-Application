@@ -249,8 +249,8 @@
           <div class="autocomplete">
             <input id="myInput" type="text" class="messaging-name" placeholder="Search for user">
           </div>
-          <textarea id="myInput" class="messaging-text" placeholder="Message for user"></textarea>
-          <button type="submit" class="messaging-button">Send Message</button>
+          <textarea id="myMessage" class="messaging-text" placeholder="Message for user"></textarea>
+          <button type="submit" id="sendMessage" class="messaging-button">Send Message</button>
         </div>
       </section>
       <hr>
@@ -260,7 +260,7 @@
         <div id="settings">
           <div class="toggle-button">
             <label class="switch-light switch-material toggle-button-1" onclick="">
-              <input type="checkbox">
+              <input type="checkbox" id="email-toggle">
               <strong>
                 Send Email Notifications
               </strong>
@@ -273,7 +273,7 @@
           </div>
           <div class="toggle-button">
             <label class="switch-light switch-material toggle-button-2" onclick="">
-              <input type="checkbox">
+              <input type="checkbox" id="profile-toggle">
               <strong>
                 Set Profile to Public
               </strong>
