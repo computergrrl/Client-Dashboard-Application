@@ -49,6 +49,14 @@
     padding-top: 30px;
     padding-left: 15px;
     padding-bottom: 30px;
+    border: $box-border;
+    border-bottom: 0;
+  }
+
+  .widget-container-bar {
+    border: $box-border;
+    border-bottom: 0;
+    padding-right: 10px;
   }
 
 }
