@@ -199,13 +199,52 @@ function messageSent() {
   memberName.value = "";
 }
 
+//settings section variables
 const emailToggle = document.getElementById("email-toggle");
 const profileToggle = document.getElementById("profile-toggle");
+const timezone = document.getElementById("timezone");
+const save = document.getElementById("save");
+const cancel = document.getElementById("cancel");
 
-emailToggle.addEventListener("click", (e) => {
-  e.target.checked == true ? console.log("it's checked!") : console.log("it's NOOOOOT checked");
-})
+//add event listener to save button to save settings to local storage
+save.addEventListener("click", () => {
+  emailToggle.checked == true ? localStorage.setItem("email", "checked") : localStorage.setItem("email", "unchecked");
 
-profileToggle.addEventListener("click", (e) => {
-  e.target.checked == true ? console.log("it's checked!") : console.log("it's NOOOOOT checked");
-})
+  profileToggle.checked == true ? localStorage.setItem("profile", "checked") : localStorage.setItem("profile", "unchecked");
+
+  index = timezone.selectedIndex;
+  localStorage.setItem("timezone" , index);
+
+  window.alert("Your settings have been saved");
+
+});
+
+cancel.addEventListener("click", resetSettings);
+
+//load settings based on local storage values
+function loadSettings() {
+  if (localStorage.getItem("email") == "checked") {
+    emailToggle.checked = true;
+  }
+
+  if (localStorage.getItem("profile") == "checked") {
+    profileToggle.checked = true;
+  }
+
+  timezone.selectedIndex = parseInt(localStorage.getItem("timezone"));
+}
+
+function resetSettings() {
+  localStorage.removeItem("email");
+  localStorage.removeItem("profile");
+  localStorage.removeItem("timezone");
+  
+  emailToggle.checked = false;
+  profileToggle.checked = false;
+  timezone.selectedIndex = 0;
+
+  window.alert("Your settings have been removed");
+}
+
+
+loadSettings();
