@@ -65,15 +65,78 @@
 
   .switch-light strong {
     margin-right: 15px;
-    // margin-top: 8px;
   }
+
   .toggle-button-2 {
     justify-content: flex-start;
   }
 
   .toggle-button-2 strong {
     margin-right: 48px;
-    // margin-top: 8px;
   }
+
+  .social-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social {
+    margin: 10px 10px;
+  }
+
+  .social-text {
+    flex-grow: unset;
+    padding-left: 20px;
+  }
+
+  .members-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .members-left {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .members-text {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .members-right p {
+    display: block;
+    font-size: 1.2em;
+    padding-right: 10px;
+    font-weight: 500;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+
+  #members {
+    display: flex; 
+    flex-direction: row;
+  }
+
+  #message-and-settings {
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .flex {
+    width: 50%;
+    border: $box-border;
+  }
+
+  .members-container {
+    min-height: 75px;
+  }
+
+  // .bottom-spacer {
+  //   padding-bottom: 15px;
+  // }
 
 }

@@ -34,13 +34,16 @@ closeButton.addEventListener("click", (e) => {
 //Create modal window popup for messages
 const bellDiv = document.querySelector("#bell-div");
 const modal = document.querySelector("#modal");
+const notify = document.querySelector(".notification");
 
 bellDiv.addEventListener("click", (e) => {
+  notify.style.display = "none";
   modal.innerHTML = `<p class="closeButton">X</p>
     <p class="modalMessages">Ron Weasley left you a message</p>
     <p class="modalMessages">New comment on your article</p>`;
   if (e.target !== modal) {
     modal.classList.toggle("hide");
+    alert.style.display = "none";
   }
   e.stopPropagation();
 });
@@ -234,6 +237,7 @@ function loadSettings() {
   timezone.selectedIndex = parseInt(localStorage.getItem("timezone"));
 }
 
+// function to reset settings if cancel button is pressed
 function resetSettings() {
   localStorage.removeItem("email");
   localStorage.removeItem("profile");
@@ -246,5 +250,5 @@ function resetSettings() {
   window.alert("Your settings have been removed");
 }
 
-
+//call the function that loads previously saved preferences
 loadSettings();

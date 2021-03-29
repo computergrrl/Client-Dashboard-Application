@@ -3,7 +3,6 @@
   margin-bottom: 20px;
 }
 
-@mixin color-theme {
-background: rgb(116,58,180);
-background: linear-gradient(90deg, rgba(116,58,180,0.6086956521739131) 0%, rgba(39,67,163,1) 47%, rgba(148,16,5,0.9164040616246498) 100%);
+@mixin border-lighten {
+  border: lighten($color-theme, 15%) 2px solid;
 }

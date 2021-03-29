@@ -30,6 +30,10 @@
   font-weight: 500;
 }
 
+#alert:hover {
+  @include border-lighten;
+}
+
 .close {
   cursor: pointer;
 }
