@@ -2,10 +2,8 @@ const trafficCanvas = document.getElementById("traffic-chart");
 const barCanvas = document.getElementById("bar-chart");
 const pieCanvas = document.getElementById("pie-chart");
 
-//let trafficData
 
-
-
+//create weekly chart data
 let weeklyData = {
   labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
     "4-10", "11-17", "18-24", "25-31"
@@ -14,13 +12,13 @@ let weeklyData = {
     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
       1350,
     ],
-    // backgroundColor: 'rgba(116, 119, 191, .3)',
     backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
   }]
 };
 
+//Create hourly chart data
 let hourlyData = {
   labels: ["12am", "1am", "2am", "3am", "4am", "5am", "6am",
     "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm",
@@ -37,6 +35,7 @@ let hourlyData = {
   }]
 };
 
+//create monthly chart data
 let monthlyData = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
     "Sep", "Oct", "Nov", "Dec"
@@ -48,10 +47,10 @@ let monthlyData = {
     backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
-    //borderColor: 'rgb(224, 157, 2)',
   }]
 };
 
+//create daily chart data
 let dailyData = {
   labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun", ],
   datasets: [{
@@ -62,6 +61,8 @@ let dailyData = {
   }]
 };
 
+
+//create data for chart options
 let trafficOptions = {
   aspectRatio: 2.5,
   animation: {
@@ -79,12 +80,16 @@ let trafficOptions = {
   }
 };
 
+//empty variable that will be set to whichever chart is clicked on
 let trafficData = " ";
 
+
+//set up weekly data by default 
 if (trafficData === " ") {
   trafficData = weeklyData;
 }
 
+//render line chart
 let trafficChart = new Chart(trafficCanvas, {
   type: 'line',
   data: trafficData,
@@ -92,7 +97,7 @@ let trafficChart = new Chart(trafficCanvas, {
 });
 
 
-
+//Render bar chart with included dataset
 let barChart = new Chart(barCanvas, {
   type: 'bar',
   data: {
@@ -108,6 +113,7 @@ let barChart = new Chart(barCanvas, {
 
 });
 
+//Create data for donut chart
 const mobileData = {
   labels: ["Gryffindor",  "Ravenclaw", "Hufflepuff", "Slytherin"],
   datasets: [{
@@ -123,7 +129,7 @@ const mobileData = {
   }]
 };
 
-//following code sets labels to the side of pie chart
+// sets labels to the side of pie chart
 const mobileOptions = {
   legend: {
     position: 'right',
@@ -134,7 +140,7 @@ const mobileOptions = {
   }
 }
 
-
+//render donut chart
 let donutChart = new Chart(pieCanvas, {
   type: "doughnut",
   data: mobileData,
@@ -142,6 +148,17 @@ let donutChart = new Chart(pieCanvas, {
 });
 
 let ul = document.querySelectorAll(".traffic-nav li");
+
+/*add event listener to chart links and pass in textContend of selected link as an argument to the chooseGraph function */
+
+for (let li of ul) {
+  li.addEventListener("click", (e) => {
+    graphData = e.target.textContent;
+    chooseGraph(graphData);
+
+  });
+}
+
 
 /*This function changes the value of trafficData based on clicked value and then renders a new chart */
 
@@ -168,13 +185,5 @@ function chooseGraph(value) {
     type: 'line',
     data: trafficData,
     options: trafficOptions
-  });
-}
-
-for (let li of ul) {
-  li.addEventListener("click", (e) => {
-    graphData = e.target.textContent;
-    chooseGraph(graphData);
-
   });
 }
