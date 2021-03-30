@@ -19,7 +19,7 @@ for (let link of trafficLinks) {
 }
 
 //create alert message 
-alert.innerHTML = `<p><strong>You have 2 unread messages</strong></p>
+alert.innerHTML = `<p><strong>Results of OWL Exams are in. Check your email.</strong></p>
 <p class="close">X</p>`;
 
 const closeButton = document.querySelector(".close");
@@ -43,7 +43,6 @@ bellDiv.addEventListener("click", (e) => {
     <p class="modalMessages">New comment on your article</p>`;
   if (e.target !== modal) {
     modal.classList.toggle("hide");
-    alert.style.display = "none";
   }
   e.stopPropagation();
 });
