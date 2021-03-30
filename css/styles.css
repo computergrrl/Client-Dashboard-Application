@@ -953,12 +953,12 @@ ul {
 
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: #520001;
+    background: #750902;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
   }
 
   .switch-material.switch-light input:checked ~ span {
-    background: rgba(82, 0, 1, 0.5);
+    background: rgba(117, 9, 2, 0.5);
   }
 
   /* switch-toggle
@@ -978,7 +978,7 @@ ul {
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: #520001;
+    background: #750902;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform 0.4s ease-in;
@@ -1003,7 +1003,7 @@ ul {
   }
 
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: #520001;
+    border-color: #750902;
   }
 
   /* ripple
@@ -1020,7 +1020,7 @@ ul {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: #520001;
+    background: #750902;
     opacity: 0.4;
     margin-left: -1.25em;
     margin-top: -1.25em;
@@ -1136,13 +1136,14 @@ main {
 **********************/
 #header {
   grid-area: header;
-  background-color: #520001;
+  background-color: #750902;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #000;
-  color: #d88c0d;
+  border-bottom: 4px solid #e09d02;
+  height: 95px;
+  width: 100%;
 }
 
 header {
@@ -1234,7 +1235,7 @@ header {
 #modal {
   width: 150px;
   height: auto;
-  background-color: #005251;
+  background-color: #e09d02;
   z-index: 5;
   border: 1px solid #c1c1c1;
   position: absolute;
@@ -1278,6 +1279,7 @@ header {
   grid-area: nav-bar;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
+  height: 75px;
 }
 
 .dashboard {
@@ -1329,7 +1331,7 @@ header {
   align-items: center;
   margin: 25px;
   padding: 5px 10px;
-  background-color: #520001;
+  background-color: #750902;
   color: #fff;
   max-height: 45px;
   border-radius: 0.3em;
@@ -1340,7 +1342,7 @@ header {
 }
 
 #alert:hover {
-  border: #9f0002 2px solid;
+  border: #c00f03 2px solid;
 }
 
 .close {
@@ -1370,13 +1372,13 @@ section h4 {
 }
 
 .traffic-nav-link:hover {
-  background-color: rgba(112, 192, 125, 0.4);
+  background-color: rgba(167, 13, 3, 0.4);
   border-radius: 45%;
   color: #fff;
 }
 
 .active {
-  background-color: rgba(112, 192, 125, 0.8);
+  background-color: rgba(117, 9, 2, 0.8);
   border-radius: 45%;
   color: #fff;
 }
@@ -1425,7 +1427,7 @@ section h4 {
   /* border:maroon solid 2px; */
   border-radius: 0.5em;
   margin: 10px auto;
-  color: #520001;
+  color: #750902;
 }
 
 .social-image {
@@ -1444,15 +1446,15 @@ section h4 {
 }
 
 .ig-svg {
-  fill: #520001;
+  fill: #750902;
 }
 
 .fb-svg {
-  fill: #520001;
+  fill: #750902;
 }
 
 .twitter-svg {
-  fill: #520001;
+  fill: #750902;
 }
 
 /************************
@@ -1509,6 +1511,10 @@ section h4 {
 
 .members-right p {
   display: none;
+}
+
+.last {
+  border-bottom: none;
 }
 
 /************************
@@ -1582,7 +1588,7 @@ section h4 {
 .messaging-button {
   width: 80%;
   color: #fff;
-  background-color: rgba(82, 0, 1, 0.8);
+  background-color: rgba(117, 9, 2, 0.8);
   border-radius: 0.5em;
   margin: 15px auto;
   min-height: 45px;
@@ -1636,7 +1642,7 @@ input[type=checkbox], select {
 }
 
 .save-button {
-  background-color: rgba(82, 0, 1, 0.8);
+  background-color: rgba(117, 9, 2, 0.8);
 }
 
 .settings-buttons {
@@ -1650,7 +1656,6 @@ input[type=checkbox], select {
   width: 45%;
   min-height: 45px;
   margin: 0 10px;
-  border: 1px solid #c1c1c1;
   border-radius: 0.5em;
   text-transform: uppercase;
   color: #fff;
@@ -1670,6 +1675,7 @@ input[type=checkbox], select {
   }
 
   #nav-bar {
+    height: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1783,15 +1789,27 @@ input[type=checkbox], select {
   #message-and-settings {
     display: flex;
     flex-direction: row;
+    border-top: 1px solid #c1c1c1;
   }
 
   .flex {
     width: 50%;
-    border: 1px solid #c1c1c1;
+  }
+
+  section {
+    border-right: 1px solid #c1c1c1;
   }
 
   .members-container {
     min-height: 75px;
+  }
+
+  .toggle-button {
+    margin-bottom: 35px;
+  }
+
+  .settings-h4 {
+    margin-bottom: 54px;
   }
 }
 

@@ -10,8 +10,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #000;
-  color: rgb(216, 140, 13);
+  border-bottom: 4px solid $gold;
+  height: 95px;
+  width: 100%;
 }
 
 header {
@@ -114,7 +115,7 @@ header {
 #modal{
   width: 150px;
   height: auto;
-  background-color: complement($color-theme);
+  background-color: $gold;
   z-index: 5;
   border: $box-border;
   position: absolute;

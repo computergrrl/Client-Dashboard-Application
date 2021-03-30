@@ -15,7 +15,7 @@ let weeklyData = {
       1350,
     ],
     // backgroundColor: 'rgba(116, 119, 191, .3)',
-    backgroundColor: 'rgba(75, 8, 17, .5)',
+    backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
   }]
@@ -31,7 +31,7 @@ let hourlyData = {
       245, 200, 345, 320, 440, 375, 500, 325, 300, 575, 450, 185,
       65, 45, 75,
     ],
-    backgroundColor: 'rgba(75, 8, 17, .5)',
+    backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
   }]
@@ -45,9 +45,10 @@ let monthlyData = {
     data: [4960, 6500, 5323, 7050, 4590, 3600, 5185, 6005, 4420, 6260,
       3995, 5750,
     ],
-    backgroundColor: 'rgba(75, 8, 17, .5)',
+    backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
+    //borderColor: 'rgb(224, 157, 2)',
   }]
 };
 
@@ -55,7 +56,7 @@ let dailyData = {
   labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun", ],
   datasets: [{
     data: [85, 265, 153, 223, 307, 355, 285, ],
-    backgroundColor: 'rgba(75, 8, 17, .5)',
+    backgroundColor: 'rgba(117, 9, 2, .5)',
     borderWidth: 1,
     borderColor: '#5e0e15',
   }]
@@ -99,7 +100,7 @@ let barChart = new Chart(barCanvas, {
     datasets: [{
       label: 'Unique Visits Per Day',
       data: [85, 265, 153, 223, 307, 355, 285, ],
-      backgroundColor: 'rgba(75, 8, 17, .5)',
+      backgroundColor: 'rgba(117, 9, 2, .5)',
       borderWidth: 1,
       borderColor: '#5e0e15',
     }]
@@ -111,10 +112,10 @@ const mobileData = {
   labels: ["Gryffindor",  "Ravenclaw", "Hufflepuff", "Slytherin"],
   datasets: [{
     label: '# of Users',
-    data: [2000, 375, 343, 85],
+    data: [156, 75, 46, 20],
     borderWidth: 0,
     backgroundColor: [
-      'rgb(82, 0, 1)',
+      'rgb(117, 9, 2)',
       'rgb(20, 43, 69)',
       'rgb(252, 141, 15)',
       'rgb(38, 100, 21)',

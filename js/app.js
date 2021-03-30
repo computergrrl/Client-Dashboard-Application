@@ -7,11 +7,11 @@ for (let link of trafficLinks) {
   link.addEventListener("click", (e) => {
 
     //nested loop to remove and add classes when link is clicked
-    for (let link of trafficLinks) {
-      if (link.textContent === e.target.textContent) {
-        link.classList.add("active");
+    for (let button of trafficLinks) {
+      if (button.textContent === e.target.textContent) {
+        button.classList.add("active");
       } else {
-        link.classList.remove("active");
+        button.classList.remove("active");
       }
     }
 

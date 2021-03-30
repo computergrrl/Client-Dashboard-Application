@@ -13,6 +13,7 @@
 
 
   #nav-bar {
+    height: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,19 +125,27 @@
   #message-and-settings {
     display: flex; 
     flex-direction: row;
+    border-top: $box-border;
   }
 
   .flex {
     width: 50%;
-    border: $box-border;
+  }
+
+  section {
+    border-right: $box-border;
   }
 
   .members-container {
     min-height: 75px;
   }
 
-  // .bottom-spacer {
-  //   padding-bottom: 15px;
-  // }
+  .toggle-button {
+    margin-bottom: 35px;
+  }
+
+  .settings-h4 {
+    margin-bottom: 54px;
+  }
 
 }
