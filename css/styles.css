@@ -1314,6 +1314,10 @@ header {
 /*****************************
     MAIN DASHBOARD & CHARTS
 ******************************/
+section {
+  border: 1px solid #c1c1c1;
+}
+
 #top-bar {
   display: flex;
   flex-direction: row;
@@ -1363,7 +1367,7 @@ section h4 {
 .traffic-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .traffic-nav-link {
@@ -1394,6 +1398,14 @@ section h4 {
   min-height: 225px;
 }
 
+.widget-container-pie {
+  padding: 20px 15px;
+}
+
+.widget-container-bar {
+  padding-bottom: 20px;
+}
+
 /************************
     SOCIAL MEDIA  
 ************************/
@@ -1414,6 +1426,7 @@ section h4 {
   align-items: center;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .social {
@@ -1702,6 +1715,15 @@ input[type=checkbox], select {
     margin-bottom: 20px;
   }
 
+  .traffic-nav {
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .traffic-nav-link {
+    padding: 15px;
+  }
+
   #graph-wrapper {
     display: flex;
     flex-direction: row;
@@ -1718,13 +1740,14 @@ input[type=checkbox], select {
     padding-left: 15px;
     padding-bottom: 30px;
     border: 1px solid #c1c1c1;
-    border-bottom: 0;
+    border: 0;
   }
 
   .widget-container-bar {
     border: 1px solid #c1c1c1;
     border-bottom: 0;
     padding-right: 10px;
+    border: 0;
   }
 
   .toggle-button-1 {
@@ -1794,6 +1817,10 @@ input[type=checkbox], select {
 
   .flex {
     width: 50%;
+  }
+
+  .bottom-two {
+    border-bottom: 0;
   }
 
   section {

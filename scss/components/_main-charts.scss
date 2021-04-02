@@ -2,6 +2,10 @@
     MAIN DASHBOARD & CHARTS
 ******************************/
 
+section {
+  border: $box-border;
+}
+
 #top-bar {
   display: flex;
   flex-direction: row;
@@ -53,7 +57,7 @@ section h4 {
 .traffic-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .traffic-nav-link {
@@ -83,6 +87,10 @@ section h4 {
   min-height: 225px;
 }
 
-// .widget-container-pie {
-//   align-self: center;
-// }
+.widget-container-pie {
+  padding: 20px 15px;
+}
+
+.widget-container-bar {
+  padding-bottom: 20px;
+}

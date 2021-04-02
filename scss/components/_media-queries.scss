@@ -36,6 +36,15 @@
     @include nav-margins;
   }
 
+  .traffic-nav {
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .traffic-nav-link {
+    padding: 15px;
+  }
+
   #graph-wrapper {
     display: flex;
     flex-direction: row;
@@ -51,13 +60,14 @@
     padding-left: 15px;
     padding-bottom: 30px;
     border: $box-border;
-    border-bottom: 0;
+    border: 0;
   }
 
   .widget-container-bar {
     border: $box-border;
     border-bottom: 0;
     padding-right: 10px;
+    border: 0;
   }
 
   .toggle-button-1 {
@@ -130,6 +140,10 @@
 
   .flex {
     width: 50%;
+  }
+
+  .bottom-two {
+    border-bottom: 0;
   }
 
   section {
