@@ -208,6 +208,7 @@ const timezone = document.getElementById("timezone");
 const save = document.getElementById("save");
 const cancel = document.getElementById("cancel");
 
+
 //add event listener to save button to save settings to local storage
 save.addEventListener("click", () => {
   emailToggle.checked == true ? localStorage.setItem("email", "checked") : localStorage.setItem("email", "unchecked");

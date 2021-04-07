@@ -73,9 +73,7 @@
   /* inherit from label
  */
   .switch-light strong {
-    font-weight: inherit;
-    margin-top: 8px;
-  }
+    font-weight: inherit; }
   .switch-light > span {
     position: relative;
     overflow: hidden;
@@ -96,8 +94,8 @@
     user-select: none; }
   .switch-light a {
     position: absolute;
-    right: 65%;
-    top: 5px;
+    right: 50%;
+    top: 0;
     z-index: 1;
     display: block;
     width: 50%;
@@ -360,7 +358,7 @@
   /* switch-light
  */
   .switch-light.switch-material a {
-    top: -0.05em;
+    top: -0.1875em;
     width: 1.75em;
     height: 1.75em;
     border-radius: 50%;
@@ -377,8 +375,8 @@
     overflow: visible;
     position: relative;
     top: 0.1875em;
-    width: 4.75em;
-    height: 1.85em;
+    width: 3.25em;
+    height: 1.5em;
     min-height: auto;
     border-radius: 1em;
     background: rgba(0, 0, 0, 0.26); }
@@ -387,10 +385,10 @@
     clip: rect(0 0 0 0); }
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: $color-theme;
+    background: #3f51b5;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12); }
   .switch-material.switch-light input:checked ~ span {
-    background: $color-theme-faded }
+    background: rgba(63, 81, 181, 0.5); }
   /* switch-toggle
  */
   .switch-toggle.switch-material {
@@ -404,7 +402,7 @@
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: $color-theme;
+    background: #3f51b5;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform .4s ease-in; }
@@ -423,7 +421,7 @@
     border: 0.125em solid rgba(0, 0, 0, 0.54);
     transform: translateY(-50%); }
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: $color-theme; }
+    border-color: #3f51b5; }
   /* ripple
  */
   .switch-light.switch-material > span:before,
@@ -438,7 +436,7 @@
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: $color-theme;
+    background: #3f51b5;
     opacity: .4;
     margin-left: -1.25em;
     margin-top: -1.25em;

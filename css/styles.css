@@ -502,7 +502,6 @@ ul {
   */
   .switch-light strong {
     font-weight: inherit;
-    margin-top: 8px;
   }
 
   .switch-light > span {
@@ -529,8 +528,8 @@ ul {
 
   .switch-light a {
     position: absolute;
-    right: 65%;
-    top: 5px;
+    right: 50%;
+    top: 0;
     z-index: 1;
     display: block;
     width: 50%;
@@ -916,7 +915,7 @@ ul {
   /* switch-light
   */
   .switch-light.switch-material a {
-    top: -0.05em;
+    top: -0.1875em;
     width: 1.75em;
     height: 1.75em;
     border-radius: 50%;
@@ -939,8 +938,8 @@ ul {
     overflow: visible;
     position: relative;
     top: 0.1875em;
-    width: 4.75em;
-    height: 1.85em;
+    width: 3.25em;
+    height: 1.5em;
     min-height: auto;
     border-radius: 1em;
     background: rgba(0, 0, 0, 0.26);
@@ -953,12 +952,12 @@ ul {
 
   .switch-material.switch-light input:checked ~ span a {
     right: 0;
-    background: #750902;
+    background: #3f51b5;
     box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
   }
 
   .switch-material.switch-light input:checked ~ span {
-    background: rgba(117, 9, 2, 0.5);
+    background: rgba(63, 81, 181, 0.5);
   }
 
   /* switch-toggle
@@ -978,7 +977,7 @@ ul {
     width: 0.375em !important;
     height: 0.375em;
     margin-left: 0.25em;
-    background: #750902;
+    background: #3f51b5;
     border-radius: 100%;
     transform: translateY(-50%);
     transition: transform 0.4s ease-in;
@@ -1003,7 +1002,7 @@ ul {
   }
 
   .switch-toggle.switch-material input:checked + label:before {
-    border-color: #750902;
+    border-color: #3f51b5;
   }
 
   /* ripple
@@ -1020,7 +1019,7 @@ ul {
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    background: #750902;
+    background: #3f51b5;
     opacity: 0.4;
     margin-left: -1.25em;
     margin-top: -1.25em;
@@ -1625,25 +1624,29 @@ svg {
 /************************
       SETTINGS 
 ************************/
-.toggle-button-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 15px;
-  margin: 15px 10px;
-}
-
+.toggle-button-1,
 .toggle-button-2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-right: 25px;
+  align-items: center;
   margin: 15px 10px;
 }
 
-.toggle-button-2 strong {
-  margin-right: 44px;
-  margin-top: 8px;
+.switch-ios.switch-light strong {
+  flex-basis: 200px;
+}
+
+.switch-ios.switch-light > span {
+  flex-basis: 100px;
+}
+
+.switch-ios.switch-light input:checked ~ span {
+  border-color: #750902;
+  box-shadow: inset 0 0 0 30px rgba(117, 9, 2, 0.5);
+}
+
+.switch-ios.switch-light input:checked ~ span a {
+  border-color: #750902;
 }
 
 input[type=checkbox], select {
@@ -1783,10 +1786,6 @@ input[type=checkbox], select {
 
   .toggle-button-2 {
     justify-content: flex-start;
-  }
-
-  .toggle-button-2 strong {
-    margin-right: 48px;
   }
 
   .social-container {
