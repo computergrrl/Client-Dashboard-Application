@@ -1432,12 +1432,11 @@ section h4 {
 .social {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 85%;
   background-color: #f2f2f2;
-  /* background-color: rgba(14, 94, 87, .1); */
   height: 100px;
   border: dimgray solid 2px;
-  /* border:maroon solid 2px; */
   border-radius: 0.5em;
   margin: 10px auto;
   color: #750902;
@@ -1447,27 +1446,45 @@ section h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  flex-grow: 1;
-  max-width: 25%;
+  margin: 15px 10px 10px;
+  background-color: #750902;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+svg {
+  align-self: center;
 }
 
 .social-text {
   flex-grow: 2;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.social-title {
+  font-size: 14px;
+}
+
+svg {
+  max-width: 30px;
 }
 
 .ig-svg {
-  fill: #750902;
+  fill: #fff;
+}
+
+.fb {
+  background-color: #750902;
+  border-radius: 50%;
 }
 
 .fb-svg {
-  fill: #750902;
+  fill: #fff;
 }
 
 .twitter-svg {
-  fill: #750902;
+  fill: #fff;
 }
 
 /************************
@@ -1750,6 +1767,14 @@ input[type=checkbox], select {
     border: 0;
   }
 
+  .members-text {
+    align-items: flex-start;
+  }
+
+  .members-container p {
+    text-align: left;
+  }
+
   .toggle-button-1 {
     justify-content: flex-start;
   }
@@ -1773,6 +1798,7 @@ input[type=checkbox], select {
 
   .social {
     margin: 10px 10px;
+    justify-content: flex-start;
   }
 
   .social-text {

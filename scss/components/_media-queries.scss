@@ -70,6 +70,14 @@
     border: 0;
   }
 
+  .members-text {
+    align-items: flex-start;
+  }
+
+  .members-container p {
+    text-align: left;
+  }
+
   .toggle-button-1 {
     justify-content: flex-start;
   }
@@ -93,6 +101,7 @@
 
   .social {
     margin: 10px 10px;
+    justify-content: flex-start;
   }
 
   .social-text {
