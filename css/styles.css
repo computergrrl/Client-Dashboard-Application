@@ -1103,6 +1103,8 @@ ul {
 
 section {
   max-width: 100%;
+  border: 1px solid #c1c1c1;
+  border-bottom: 0;
 }
 
 .clearfix {
@@ -1314,10 +1316,6 @@ header {
 /*****************************
     MAIN DASHBOARD & CHARTS
 ******************************/
-section {
-  border: 1px solid #c1c1c1;
-}
-
 #top-bar {
   display: flex;
   flex-direction: row;
@@ -1843,10 +1841,6 @@ input[type=checkbox], select {
 
   .flex {
     width: 50%;
-  }
-
-  .bottom-two {
-    border-bottom: 0;
   }
 
   section {

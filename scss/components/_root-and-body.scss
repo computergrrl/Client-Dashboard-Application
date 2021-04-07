@@ -8,6 +8,8 @@ ul {
 
 section {
   max-width: 100%;
+  border: $box-border;
+  border-bottom: 0;
 }
 .clearfix {
   overflow: auto;
