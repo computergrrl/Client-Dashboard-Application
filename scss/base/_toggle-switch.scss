@@ -462,11 +462,11 @@
   .switch-material.switch-light input:not(:checked) ~ span:after,
   .switch-material.switch-light input:checked ~ span:before,
   .switch-toggle.switch-material input:checked + label:after {
-    animation: materialRipple .4s ease-in; }
+    animation: materialRipple .4s ease-in ; }
   /* trick to prevent the default checked ripple animation from showing
  * when the page loads.
  * the ripples are hidden by default, and shown only when the input is focused.
- */
+ */  
   .switch-light.switch-material.switch-light input ~ span:before,
   .switch-light.switch-material.switch-light input ~ span:after,
   .switch-material.switch-toggle input + label:after {
